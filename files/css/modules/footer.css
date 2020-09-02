@@ -1,0 +1,130 @@
+$footerBackgroundColor: $baseMonoLight;
+$footerTextColor: $textOnLight;
+
+
+footer {
+    margin-top: auto;
+    border-top: 1px solid scale-color(#000000, 1, 2, 3, 0%, 0%, .3);
+}
+
+.footer-grid
+{
+    background-color: $footerBackgroundColor;
+    color: $footerTextColor;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 15px;
+    grid-column-gap: 60px;
+
+    margin: 0 auto;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @mixin atDFMobilePortrait {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    &__logo
+    {
+        height: 30px;
+        margin: 10px;
+    }
+    
+    
+    &__item{
+        &__link{
+            display: block;
+            margin-bottom: 5px;
+            color: $footerTextColor;
+
+            @mixin atDFMobileLandscape{
+                font-size: 13px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+
+            color: $footerTextColor;
+            margin-bottom: 5px;
+            
+            @mixin atDFMobileLandscape{
+                font-size: 13px;
+            }
+        }
+
+        &__button{
+            background-color: $colorB;
+            border-radius: 3px;
+            color: #FFF;
+            display: inline-block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-top: 5px;
+
+            @mixin atDFMobilePortrait {
+                text-align: center;
+                display: block;
+                margin-right: 0px;
+            }
+            
+        }
+    }
+}
+
+.item-logo
+{
+    text-align: right;
+}
+
+.item-links
+{
+    text-align: right;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.item-address 
+{
+    text-align: left;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+@mixin atDFMobilePortrait {
+
+    .item-logo, .item-links, .item-address{
+        text-align: center;
+    }
+
+    .item-logo
+    {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .item-links
+    {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .item-address 
+    {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}

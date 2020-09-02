@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="szabl.baseCompLight.svg"
+   version="1.1"
+   viewBox="0 0 888 651.93175"
+   height="651.93175"
+   width="888"
+   data-name="Layer 1"
+   id="be32c85c-9388-4a2b-a4e5-271574a5b9b2">
+  <metadata
+     id="metadata73">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs71" />
+  <sodipodi:namedview
+     inkscape:current-layer="be32c85c-9388-4a2b-a4e5-271574a5b9b2"
+     inkscape:window-maximized="1"
+     inkscape:window-y="48"
+     inkscape:window-x="-8"
+     inkscape:cy="396.92444"
+     inkscape:cx="444"
+     inkscape:zoom="1.1274186"
+     showgrid="false"
+     id="namedview69"
+     inkscape:window-height="961"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <title
+     id="title2">design_notes</title>
+  <rect
+     id="rect32"
+     fill="#e6e6e6"
+     height="412.3576"
+     width="643.86163"
+     y="113.34008"
+     x="136.73514" />
+  <rect
+     id="rect34"
+     fill="#ffffff"
+     height="336.24258"
+     width="607.03949"
+     y="165.06003"
+     x="155.14621" />
+  <rect
+     id="rect36"
+     fill="#e8cbb6"
+     height="27.3536"
+     width="643.86163"
+     y="112.97507"
+     x="136.46021" />
+  <circle
+     id="circle38"
+     fill="#ffffff"
+     r="5.0697799"
+     cy="126.95969"
+     cx="156.78722" />
+  <circle
+     id="circle40"
+     fill="#ffffff"
+     r="5.0697799"
+     cy="126.95969"
+     cx="176.03082" />
+  <circle
+     id="circle42"
+     fill="#ffffff"
+     r="5.0697799"
+     cy="126.95969"
+     cx="195.27444" />
+  <rect
+     id="rect44"
+     fill="#e6e6e6"
+     height="266.46677"
+     width="155.98055"
+     y="199.94792"
+     x="210.30405" />
+  <rect
+     id="rect46"
+     fill="#e8cbb6"
+     height="73.347992"
+     width="129.9838"
+     y="199.94792"
+     x="393.20981" />
+  <rect
+     id="rect48"
+     fill="#e6e6e6"
+     height="78.918732"
+     width="129.9838"
+     y="293.72195"
+     x="393.20981" />
+  <rect
+     id="rect50"
+     fill="#e6e6e6"
+     height="73.347992"
+     width="129.9838"
+     y="393.06671"
+     x="393.20981" />
+  <rect
+     id="rect52"
+     fill="#e6e6e6"
+     height="116.12476"
+     width="155.98055"
+     y="199.94792"
+     x="551.04724" />
+  <rect
+     id="rect54"
+     fill="#e8cbb6"
+     height="116.12476"
+     width="155.98055"
+     y="350.28995"
+     x="551.04724" />
+  <polygon
+     transform="translate(-85.150271,44.3491)"
+     id="polygon56"
+     fill="#3f3d56"
+     points="587.089,21.06 844.827,21.06 844.827,23.166 588.708,23.166 544.691,188.755 542.655,188.214 " />
+  <path
+     id="path58"
+     fill="#3f3d56"
+     d="m 780.73698,88.57459 a 22.11275,22.11275 0 1 1 22.11275,-22.11275 22.13792,22.13792 0 0 1 -22.11275,22.11275 z m 0,-42.11952 a 20.00678,20.00678 0 1 0 20.00677,20.00677 20.02953,20.02953 0 0 0 -20.00677,-20.00677 z" />
+  <circle
+     id="circle60"
+     fill="#e8cbb6"
+     r="8.4238997"
+     cy="66.461853"
+     cx="780.737" />
+  <polygon
+     transform="translate(-85.150271,44.3491)"
+     id="polygon62"
+     fill="#3f3d56"
+     points="415.208,528.6 671.328,528.6 715.345,363.01 717.381,363.551 672.947,530.706 415.208,530.706 " />
+  <path
+     id="path64"
+     fill="#3f3d56"
+     d="m 308.99833,596.11484 a 22.11275,22.11275 0 1 1 22.11275,-22.11275 22.13792,22.13792 0 0 1 -22.11275,22.11275 z m 0,-42.11952 a 20.00678,20.00678 0 1 0 20.00677,20.00677 20.02953,20.02953 0 0 0 -20.00677,-20.00677 z" />
+  <circle
+     id="circle66"
+     fill="#e8cbb6"
+     r="8.4238997"
+     cy="574.00214"
+     cx="308.99832" />
+</svg>

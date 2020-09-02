@@ -1,0 +1,110 @@
+.contact-section {
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 60px 60px 60px;
+    @mixin atDFMobileLandscape {
+        padding: 0px 30px 30px 30px;
+    }
+
+    @mixin atDFMobilePortrait {
+        padding: 0px 15px 15px 15px;
+    }
+
+    align-items: center;
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+
+        width: 75%;
+        @mixin atDFMobilePortrait {
+            width: 100%;
+        }
+
+        margin-bottom: 30px;
+
+        textarea,
+        input {
+            border: 1px solid color($baseMono a(0.3));
+            background-color: color($baseMono a(0.1));
+            color: $textOnLight;
+            align-self: flex-start;
+            margin-bottom: 25px;
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 20px;
+        }
+
+        textarea {
+            height: 200px;
+        }
+
+        label {
+            align-self: flex-start;
+            text-transform: uppercase;
+            font-family: "Lato", sans-serif;
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            align-self: center;
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @mixin atDFTablet {
+            flex-direction: column;
+        }
+
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+
+        .contact-detail {
+            padding: 30px;
+            margin-right: 20px;
+            @mixin atDFTablet {
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+
+            //border: 1px solid $base;
+            display: flex;
+            flex-direction: column;
+
+            @mixin addShadow;
+
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .contact-detail-type {
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-bottom: 0px;
+            color: $baseMono;
+        }
+
+        .buttons-container {
+        }
+
+        .btn {
+            //margin: 10px;
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+    }
+}

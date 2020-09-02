@@ -1,0 +1,176 @@
+.big-section {
+    /* do skalowania tekstu w środku */
+    font-size: 15px;
+
+    background-color: $baseMonoLight;
+    color: $textOnLight;
+    display: flex;
+
+    padding: 60px;
+    @mixin atDFTablet {
+        padding: 30px;
+    }
+    @mixin atDFMobileLandscape {
+        padding: 30px;
+    }
+
+    width: 100%;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    &__centered-container {
+        /* border: 1px solid greenyellow; */
+        align-self: center;
+        width: 75%;
+
+        /* margin-top: 30px; */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        @mixin atDFTablet {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &--reversed {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &--whitebg {
+        background-color: transparent;
+    }
+
+    &__contentbox {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__imagebox {
+        width: 300px;
+        height: 300px;
+        align-self: center;
+
+        @mixin atDFTablet {
+            width: 250px;
+            height: 250px;
+        }
+        @mixin atDFMobileLandscape {
+            width: 200px;
+            height: 200px;
+        }
+        @mixin atDFMobilePortrait {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        padding: 30px 60px 0px 60px;
+        font-size: 2.5em;
+        @mixin atDFTablet {
+            font-size: 2.2em;
+        }
+        @mixin atDFMobileLandscape {
+            font-size: 2em;
+        }
+        @mixin atDFMobilePortrait {
+            font-size: 1.8em;
+        }
+
+        display: flex;
+        color: $base;
+        /* text-shadow: 2px 2px 2px color(#000 a(0.5)); */
+    }
+
+    p {
+        margin: 0;
+        padding: 30px 60px 30px 60px;
+
+        font-size: 1.5em;
+        @mixin atDFTablet {
+            font-size: 1.4em;
+            padding: 30px 30px 30px 30px;
+        }
+        @mixin atDFMobileLandscape {
+            font-size: 1.3em;
+            padding: 30px 15px 30px 15px;
+        }
+        @mixin atDFMobilePortrait {
+            font-size: 1.2em;
+            padding: 30px 15px 30px 15px;
+        }
+
+        .blue {
+            color: $base;
+        }
+
+        .orange {
+            color: $baseComp;
+        }
+    }
+}
+
+.bg--resp {
+    background-image: url("../img/resp.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--seo {
+    background-image: url("../img/seo.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--opt {
+    background-image: url("../img/opt.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--wp {
+    background-image: url("../img/wp.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--szabl {
+    background-image: url("../img/szabl.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--wizyt {
+    background-image: url("../img/wizyt.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--cena {
+    background-image: url("../img/cena.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

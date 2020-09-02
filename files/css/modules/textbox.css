@@ -1,0 +1,162 @@
+$tbGradientStart: color($base a(0.8));
+$tbGradientEnd: color($baseComp a(0.8));
+
+.textboxes {
+    display: none;
+    &--resp {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/responsywnosc.jpg");
+    }
+
+    &--seo {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/seo.jpg");
+    }
+
+    &--opt {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/opt.jpg");
+    }
+
+    &--wp {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/wp1.png");
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    align-self: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 75%;
+    &--blue {
+        background-color: $baseMonoLight;
+    }
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    @mixin addShadow;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.textbox {
+    padding: 30px;
+    min-height: 300px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @mixin atDFMobileLandscape {
+        padding: 30px;
+    }
+
+    @mixin atDFMobilePortrait {
+        padding: 15px;
+    }
+
+    /* &--blue {
+        background-color: $baseMonoLight;
+    }
+
+    &--responsywnosc {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/responsywnosc.jpg");
+    }
+
+    &--seo {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/seo.jpg");
+    }
+ */
+    &__heading {
+        color: $textOnLight;
+        font-size: 2.7em;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $textOnLight;
+        max-width: 700px;
+        font-size: 20px;
+    }
+}
+
+.imagebox {
+    opacity: 0;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* @mixin addShadow; */
+
+    &--resp {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/responsywnosc.jpg");
+    }
+
+    &--seo {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/seo.jpg");
+    }
+
+    &--opt {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/opt.jpg");
+    }
+
+    &--wp {
+        background-image: linear-gradient(
+                to right,
+                $tbGradientStart,
+                $tbGradientEnd
+            ),
+            url("../img/wp1.png");
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

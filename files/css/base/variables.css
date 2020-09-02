@@ -1,0 +1,63 @@
+/*
+$colorA: #3B5DAD;
+$colorB: #FA9A87;
+$colorC: #6E98FA;
+$colorD: #BDFA55;
+$colorE: #87AD44;
+*/
+
+$colorA: #3b81ad;
+$colorB: #f89a9a;
+$colorC: #6ec4fa;
+$colorD: #faf855;
+$colorE: #adac44;
+
+$base: #2f8cd0;
+
+$baseMono: #58a3da;
+$baseMonoLight: #daeaf7;
+
+$baseComp: #d0732f;
+$baseCompLight: #e8cbb6;
+
+$textOnLight: #333;
+$textOnDark: #eee;
+
+.tests {
+    display: flex;
+    margin: 20px;
+}
+
+.tester {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+
+    &-base {
+        background-color: $base;
+    }
+
+    &-base-mono {
+        background-color: $baseMono;
+    }
+
+    &-base-mono-light {
+        background-color: $baseMonoLight;
+    }
+
+    &-base-comp {
+        background-color: $baseComp;
+    }
+
+    &-base-comp-light {
+        background-color: $baseCompLight;
+    }
+}
+
+.text-on-light {
+    color: $textOnLight;
+}
+
+.text-on-dark {
+    color: $textOnDark;
+}

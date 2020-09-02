@@ -1,0 +1,176 @@
+/* START navigation.css */
+.navigation {
+    //background-image: linear-gradient(to bottom, $base, $baseMono);
+
+    z-index: 4;
+
+    background-color: color($base a(0));
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+
+    font-family: "Lato", sans-serif;
+
+    /* Latajace menu na desktopie */
+    position: fixed;
+
+    transition: all 0.3s linear;
+
+    &--floating {
+        background-image: linear-gradient(to bottom, $base, $baseMono);
+        box-shadow: 1px 2px 2px rgba(#000000, 0.2);
+    }
+
+    & + * {
+        margin-top: 0px;
+    }
+
+    /* Zwykłe na tablecie i niżej */
+    @mixin atDFTablet {
+        /* position: static; */
+        //box-shadow: none;
+
+        & + * {
+            margin-top: 0px;
+        }
+    }
+
+    &__narrow_container {
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 250px;
+        display: flex;
+
+        padding-right: 20px;
+
+        .logo {
+            flex: 1;
+            height: 30px;
+            margin: 10px 10px 10px 20px;
+            transition: all 0.2s;
+            transform: scale(1);
+            width: 50px;
+            z-index: 5;
+
+            color: $textOnDark;
+            font-size: 25px;
+        }
+
+        .navbar {
+            position: static;
+            flex: 4;
+            visibility: visible;
+            opacity: 1;
+
+            ul {
+                flex-direction: row;
+                padding-right: 30px;
+                display: flex;
+                justify-content: flex-end;
+                height: 100%;
+                align-items: center;
+            }
+
+            @mixin atDFMobileLandscape {
+                position: absolute;
+                background-color: color($base a(0.95));
+                //background-image: linear-gradient(to bottom, $base, $base);
+                opacity: 0;
+
+                top: 0px;
+                padding-top: 60px;
+
+                left: 0;
+                right: 0;
+                visibility: hidden;
+                transition: all 0.2s linear;
+
+                ul {
+                    flex-direction: column;
+                }
+            }
+
+            li {
+                /* top right bottom left*/
+                padding: 10px 10px 10px 30px;
+                font-size: 1.4;
+
+                @mixin atDFTablet {
+                    text-align: center;
+                }
+                @mixin atDFMobileLandscape {
+                    padding: 5px 0px 5px 0px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &--active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .burger-container {
+            display: none;
+            cursor: pointer;
+            position: relative;
+
+            padding: 20px;
+
+            position: absolute;
+            right: 0;
+            top: 0px;
+
+            i {
+                flex: 1;
+                color: $textOnDark;
+            }
+
+            @mixin atDFMobileLandscape {
+                display: block;
+            }
+        }
+
+        ul a {
+            display: block;
+            height: 100%;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.2s linear;
+            transform: scale(1);
+
+            &.link-active {
+                border-bottom: 1px solid $baseMono;
+                transform: scale(1.1);
+            }
+
+            &:hover,
+            &:focus {
+                border-bottom: 1px solid $baseMonoLight;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.top-menu-margin {
+    margin-top: 60px;
+}
+
+.flex-container {
+    padding: 10px;
+    background-color: hotpink;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 300px;
+    justify-content: flex-end;
+}
+
+.flex-item {
+    background-color: lime;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+/* END navigation.css */

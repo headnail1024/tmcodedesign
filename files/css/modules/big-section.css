@@ -151,6 +151,14 @@
     background-position: center center;
 }
 
+.bg--presta {
+    background-image: url("../img/woo_presta.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .bg--szabl {
     background-image: url("../img/szabl.baseCompLight.svg");
 

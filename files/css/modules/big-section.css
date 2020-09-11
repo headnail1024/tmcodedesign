@@ -175,6 +175,14 @@
     background-position: center center;
 }
 
+.bg--sklep {
+    background-image: url("../img/sklep.baseCompLight.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .bg--cena {
     background-image: url("../img/cena.baseCompLight.svg");
 

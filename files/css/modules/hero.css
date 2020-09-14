@@ -52,6 +52,10 @@
         &--strony {
             background-image: url("../img/hero-strony.jpg");
         }
+
+        &--inne {
+            background-image: url("../img/hero-inne.jpg");
+        }
     }
 
     &__image2 {

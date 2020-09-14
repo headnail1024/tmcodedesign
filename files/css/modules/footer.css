@@ -1,14 +1,13 @@
 $footerBackgroundColor: $baseMonoLight;
 $footerTextColor: $textOnLight;
 
-
 footer {
     margin-top: auto;
-    border-top: 1px solid scale-color(#000000, 1, 2, 3, 0%, 0%, .3);
+    border-top: 1px solid scale-color(#000000, 1, 2, 3, 0%, 0%, 0.3);
+    @mixin debugCss;
 }
 
-.footer-grid
-{
+.footer-grid {
     background-color: $footerBackgroundColor;
     color: $footerTextColor;
 
@@ -28,25 +27,23 @@ footer {
     @mixin atDFMobilePortrait {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
-        
+
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    
-    &__logo
-    {
+
+    &__logo {
         height: 30px;
         margin: 10px;
     }
-    
-    
-    &__item{
-        &__link{
+
+    &__item {
+        &__link {
             display: block;
             margin-bottom: 5px;
             color: $footerTextColor;
 
-            @mixin atDFMobileLandscape{
+            @mixin atDFMobileLandscape {
                 font-size: 13px;
             }
         }
@@ -56,16 +53,16 @@ footer {
 
             color: $footerTextColor;
             margin-bottom: 5px;
-            
-            @mixin atDFMobileLandscape{
+
+            @mixin atDFMobileLandscape {
                 font-size: 13px;
             }
         }
 
-        &__button{
+        &__button {
             background-color: $colorB;
             border-radius: 3px;
-            color: #FFF;
+            color: #fff;
             display: inline-block;
             padding-top: 5px;
             padding-bottom: 5px;
@@ -80,50 +77,44 @@ footer {
                 display: block;
                 margin-right: 0px;
             }
-            
         }
     }
 }
 
-.item-logo
-{
+.item-logo {
     text-align: right;
 }
 
-.item-links
-{
+.item-links {
     text-align: right;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-.item-address 
-{
+.item-address {
     text-align: left;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 @mixin atDFMobilePortrait {
-
-    .item-logo, .item-links, .item-address{
+    .item-logo,
+    .item-links,
+    .item-address {
         text-align: center;
     }
 
-    .item-logo
-    {
+    .item-logo {
         grid-column: unset;
         grid-row: unset;
     }
 
-    .item-links
-    {
+    .item-links {
         grid-column: unset;
         grid-row: unset;
     }
 
-    .item-address 
-    {
+    .item-address {
         grid-column: unset;
         grid-row: unset;
     }

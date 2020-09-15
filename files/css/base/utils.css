@@ -117,13 +117,6 @@
     box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.38);
 }
 
-@define-mixin debugCss {
-    border-top: 1px dotted red;
-    border-bottom: 1px dotted green;
-    border-left: 1px dotted blue;
-    border-right: 1px dotted fuchsia;
-}
-
 /* Tester na breakpointy MF */
 /*
  .bpinfo2 p{

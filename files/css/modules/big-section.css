@@ -206,3 +206,35 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.bg--facjata {
+    background-image: url("../img/facjata.jpg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--omnie-wyksztalcenie {
+    background-image: url("../img/wyksztalcenie.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--omnie-doswiadczenie {
+    background-image: url("../img/doswiadczenie.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--omnie-podejscie {
+    background-image: url("../img/podejscie.svg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

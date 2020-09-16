@@ -58,7 +58,7 @@
         z-index: 1;
 
         &--strony {
-            background-image: url("../img/hero-strony.jpg");
+            background-image: url("../img/big-hero.jpg");
         }
 
         &--inne {

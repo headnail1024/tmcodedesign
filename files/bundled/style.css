@@ -278,6 +278,11 @@ a {
             font-size: 25px;
         }
 
+.navigation__narrow_container .logo a {
+                display: block;
+                width: 125px;
+            }
+
 .navigation__narrow_container .navbar {
             position: static;
             flex: 4;

@@ -53,6 +53,11 @@
 
             color: $textOnDark;
             font-size: 25px;
+
+            a {
+                display: block;
+                width: 125px;
+            }
         }
 
         .navbar {

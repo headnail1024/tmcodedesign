@@ -74,6 +74,7 @@
                 justify-content: flex-end;
                 height: 100%;
                 align-items: center;
+                text-shadow: 2px 2px 2px color(#000 a(0.5));
             }
 
             @mixin atDFMobileLandscape {

@@ -293,7 +293,7 @@ a {
 
 .navigation__narrow_container .navbar ul {
                 flex-direction: row;
-                padding-right: 30px;
+                /* padding-right: 30px; */
                 display: flex;
                 justify-content: flex-end;
                 height: 100%;

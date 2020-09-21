@@ -208,11 +208,15 @@
 }
 
 .bg--facjata {
-    background-image: url("../img/facjata.jpg");
+    background-image: url("../img/face.jpg");
 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    @mixin addDeeperShadow;
 }
 
 .bg--omnie-wyksztalcenie {

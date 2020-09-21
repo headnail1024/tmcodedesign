@@ -1,8 +1,8 @@
 $heroGradientStart: color($base a(0.3));
 $heroGradientEnd: color($baseMonoLight a(0.3));
 
-$heroGradientStart: color($base a(1));
-$heroGradientEnd: color($baseComp a(0.6));
+$heroGradientStart: color($base a(0.35));
+$heroGradientEnd: color($baseComp a(0.35));
 
 .big-hero {
     background-color: $baseMono;
@@ -60,6 +60,7 @@ $heroGradientEnd: color($baseComp a(0.6));
 
         p {
             font-size: 1.5em;
+            text-shadow: 2px 2px 2px color(#000 a(0.5));
 
             @mixin atDFTablet {
                 font-size: 1em;

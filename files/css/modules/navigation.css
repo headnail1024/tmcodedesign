@@ -1,20 +1,16 @@
-/* START navigation.css */
+/* Nawigacja mobilna i desktopowa */
 .navigation {
-    //background-image: linear-gradient(to bottom, $base, $baseMono);
-
     z-index: 4;
-
     background-color: color($base a(0));
     width: 100%;
     padding: 5px 0px 5px 0px;
-
     font-family: "Lato", sans-serif;
 
     /* Latajace menu na desktopie */
     position: fixed;
-
     transition: all 0.3s linear;
 
+    /* Klasa dodawana przez javascript kiedy okno jest scrollowane */
     &--floating {
         background-image: linear-gradient(to bottom, $base, $baseMono);
         box-shadow: 1px 2px 2px rgba(#000000, 0.2);
@@ -26,9 +22,6 @@
 
     /* Zwykłe na tablecie i niżej */
     @mixin atDFTablet {
-        /* position: static; */
-        //box-shadow: none;
-
         & + * {
             margin-top: 0px;
         }
@@ -69,7 +62,6 @@
 
             ul {
                 flex-direction: row;
-                /* padding-right: 30px; */
                 display: flex;
                 justify-content: flex-end;
                 height: 100%;
@@ -77,10 +69,11 @@
                 text-shadow: 2px 2px 2px color(#000 a(0.5));
             }
 
+            /* Menu na mobilkach pozycjonowane absolutnie,
+               pokazane na całym ekranie i wyśrodkowane */
             @mixin atDFMobileLandscape {
                 position: absolute;
                 background-color: color($base a(0.95));
-                //background-image: linear-gradient(to bottom, $base, $base);
                 opacity: 0;
 
                 top: 0px;
@@ -97,7 +90,6 @@
             }
 
             li {
-                /* top right bottom left*/
                 padding: 10px 10px 10px 30px;
                 font-size: 1.4;
 
@@ -162,22 +154,3 @@
 .top-menu-margin {
     margin-top: 60px;
 }
-
-.flex-container {
-    padding: 10px;
-    background-color: hotpink;
-    display: flex;
-    margin: 0 auto;
-    max-width: 1000px;
-    height: 300px;
-    justify-content: flex-end;
-}
-
-.flex-item {
-    background-color: lime;
-    height: 100px;
-    width: 100px;
-    margin-left: 10px;
-}
-
-/* END navigation.css */

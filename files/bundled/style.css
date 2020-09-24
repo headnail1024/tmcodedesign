@@ -1,6 +1,9 @@
-/* Breakpointy Desktop First */
+/* Plik z klasami narzędziowymi i definicją mixinow i breakpointów */
 
-/* breakpointy takie same jak w webflow */
+/* Breakpointy Desktop First
+   takie same jak w webflow */
+
+/* Helper pokazujący w jakim breakpoincie aktualne jesteśmy */
 
 .bpinfo p {
     position: fixed;
@@ -10,11 +13,12 @@
 }
 
 .bpinfo p::after {
+        /* Desktop */
         content: "D";
         color: rgba(0, 0, 0, 0.38);
-
-        //background-color: black;
     }
+
+/* Tablet */
 
 @media only screen and (max-width: 991px) {
 
@@ -23,12 +27,16 @@
     }
     }
 
+/* Mobile - Landscape */
+
 @media only screen and (max-width: 767px) {
 
 .bpinfo p::after {
             content: "ML"
     }
     }
+
+/* Mobile - Portrait */
 
 @media only screen and (max-width: 478px) {
 
@@ -37,97 +45,21 @@
     }
     }
 
-.auto-padded-box {
-    padding: 60px;
-}
+/* Dodanie cienia */
 
-@media only screen and (max-width: 991px) {
+/* Dodanie głębszego cienia */
 
-.auto-padded-box {
-        padding: 30px
-}
-    }
+/* Definicja zmiennych i palety kolorów */
 
-@media only screen and (max-width: 767px) {
+/* Kolor bazowy i jego odcienie (niebieski)*/
 
-.auto-padded-box {
-        padding: 15px
-}
-    }
+/* Kolor komplementarny i jego odcienie (pomarańczowy) */
 
-@media only screen and (max-width: 478px) {
+/* Kolor tekstu na jasnym tle */
 
-.auto-padded-box {
-        padding: 5px
-}
-    }
+/* Kolor tekstu na ciemnym tle */
 
-.higher-auto-padded-box {
-    padding: 120px 60px 120px 60px;
-}
-
-@media only screen and (max-width: 991px) {
-
-.higher-auto-padded-box {
-        padding: 60px 30px 60px 30px
-}
-    }
-
-@media only screen and (max-width: 767px) {
-
-.higher-auto-padded-box {
-        padding: 30px 15px 30px 15px
-}
-    }
-
-@media only screen and (max-width: 478px) {
-
-.higher-auto-padded-box {
-        padding: 10px 5px 10px 5px
-}
-    }
-
-/* Tester na breakpointy MF */
-
-/*
- .bpinfo2 p{
-   position: fixed;
-   z-index: 10;
-   &::after
-   {
-     content: "none";
-
-     @mixin atExtraSmall {
-       content: "XS";
-     }
-
-     @mixin atSmall {
-       content: "S";
-     }
-
-     @mixin atMedium {
-       content: "M";
-     }
-
-     @mixin atLarge {
-       content: "L";
-     }
-
-     @mixin atExtraLarge {
-       content: "XL";
-     }
-
-   }
- }
- */
-
-/*
-$colorA: #3B5DAD;
-$colorB: #FA9A87;
-$colorC: #6E98FA;
-$colorD: #BDFA55;
-$colorE: #87AD44;
-*/
+/* Tester kolorów palety - używany tylko w index-sandbox.htm */
 
 .tests {
     display: flex;
@@ -168,6 +100,10 @@ $colorE: #87AD44;
     color: #eee;
 }
 
+/* Bazowy plik css */
+
+/* Border box dla wszystkich elementów */
+
 * {
     box-sizing: border-box;
 }
@@ -176,22 +112,14 @@ $colorE: #87AD44;
     outline: none;
 }
 
-html {
-    //scroll-behavior: smooth;
-    //filter: invert() hue-rotate(180deg) blur(1px);
-}
-
 body {
     margin: 0px;
     padding: 0px;
-
     font-family: "Source Sans Pro", sans-serif;
-
     font-size: 1.4;
     color: #333;
     display: flex;
     flex-direction: column;
-    //min-height: 100vh;
 }
 
 h1,
@@ -203,35 +131,36 @@ h3 {
     padding: 0;
 }
 
+/* Reset list */
+
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+/* Reset linków */
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* START navigation.css */
+/* Nawigacja mobilna i desktopowa */
 
 .navigation {
-    //background-image: linear-gradient(to bottom, #2f8cd0, #58a3da);
-
     z-index: 4;
-
     background-color: rgba(47, 140, 208, 0);
     width: 100%;
     padding: 5px 0px 5px 0px;
-
     font-family: "Lato", sans-serif;
 
     /* Latajace menu na desktopie */
     position: fixed;
-
     transition: all 0.3s linear;
 }
+
+/* Klasa dodawana przez javascript kiedy okno jest scrollowane */
 
 .navigation--floating {
         background-image: linear-gradient(to bottom, #2f8cd0, #58a3da);
@@ -245,12 +174,6 @@ a {
 /* Zwykłe na tablecie i niżej */
 
 @media only screen and (max-width: 991px) {
-
-.navigation {
-        /* position: static; */
-        //box-shadow: none
-}
-
         .navigation + * {
             margin-top: 0px;
         }
@@ -293,7 +216,6 @@ a {
 
 .navigation__narrow_container .navbar ul {
                 flex-direction: row;
-                /* padding-right: 30px; */
                 display: flex;
                 justify-content: flex-end;
                 height: 100%;
@@ -301,12 +223,14 @@ a {
                 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
             }
 
+/* Menu na mobilkach pozycjonowane absolutnie,
+               pokazane na całym ekranie i wyśrodkowane */
+
 @media only screen and (max-width: 767px) {
 
 .navigation__narrow_container .navbar {
                 position: absolute;
                 background-color: rgba(47, 140, 208, 0.95);
-                //background-image: linear-gradient(to bottom, #2f8cd0, #2f8cd0);
                 opacity: 0;
 
                 top: 0px;
@@ -324,7 +248,6 @@ a {
     }
 
 .navigation__narrow_container .navbar li {
-                /* top right bottom left*/
                 padding: 10px 10px 10px 30px;
                 font-size: 1.4;
             }
@@ -397,25 +320,6 @@ a {
     margin-top: 60px;
 }
 
-.flex-container {
-    padding: 10px;
-    background-color: hotpink;
-    display: flex;
-    margin: 0 auto;
-    max-width: 1000px;
-    height: 300px;
-    justify-content: flex-end;
-}
-
-.flex-item {
-    background-color: lime;
-    height: 100px;
-    width: 100px;
-    margin-left: 10px;
-}
-
-/* END navigation.css */
-
 footer {
     margin-top: auto;
     border-top: 1px solid scale-color(#000000, 1, 2, 3, 0%, 0%, 0.3);
@@ -483,7 +387,7 @@ footer {
     }
 
 .footer-grid__item__button {
-            background-color: #f89a9a;
+            background-color: #d0732f;
             border-radius: 3px;
             color: #fff;
             display: inline-block;
@@ -544,6 +448,13 @@ footer {
     }
     }
 
+/* Wielki HERO na stronie głownej */
+
+/* Kolory gradientu nałożonego na grafikę w hero */
+
+/* Hero składa się z 3 nałożonych na siebie warstw - rozłożonych na gridzie
+   i sterowanych przez z-index */
+
 .big-hero {
     background-color: #58a3da;
 
@@ -563,8 +474,9 @@ footer {
 }
     }
 
+/* Pierwsza warstwa - obrazek */
+
 .big-hero__image {
-        /*boop*/
         background-image: url("../img/big-hero.jpg");
         grid-column: 1/7;
         grid-row: 1/5;
@@ -574,14 +486,17 @@ footer {
         z-index: 1;
     }
 
+/* Druga warstwa - gradient z przerzoczystością */
+
 .big-hero__image2 {
-        /*boop*/
         background-image: linear-gradient(rgba(47, 140, 208, 0.35), rgba(208, 115, 47, 0.35));
         grid-column: 1/7;
         grid-row: 1/5;
         background-size: cover;
         z-index: 2;
     }
+
+/* Trzecia warstwa - treść */
 
 .big-hero__content {
         z-index: 3;
@@ -629,8 +544,7 @@ footer {
         }
     }
 
-.big-hero__content a {
-        }
+/* Definicje przycisków */
 
 .btn {
     background-color: #d0732f;
@@ -662,6 +576,8 @@ footer {
         box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.38);
     }
 
+/* Duży pomarańczowy przycisk w herosie na stronie głównej */
+
 .btn--big {
         font-size: 16pt;
         box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.38);
@@ -673,12 +589,13 @@ footer {
             box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.38);
         }
 
+/* Niebieskie przyciski */
+
 .btn--blue {
         background-color: #2f8cd0;
     }
 
 .teasers {
-    /* Layout */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -696,7 +613,6 @@ footer {
     }
 
 .teasers .teaser {
-        /* Layout */
         display: flex;
         width: 350px;
         height: auto;
@@ -706,8 +622,6 @@ footer {
 
         box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.38);
         transition: all 0.3s linear;
-
-        //border-radius: 20px;
     }
 
 @media only screen and (max-width: 991px) {
@@ -729,8 +643,6 @@ footer {
             transform: scale(1.05);
         }
 
-/* @mixin addDeeperShadow */
-
 .teasers .teaser:hover .teaser__label {
                 background-color: #d0732f;
             }
@@ -740,9 +652,6 @@ footer {
             }
 
 .teasers .teaser__label {
-            //border-top-left-radius: 20px;
-            //border-bottom-left-radius: 20px;
-
             transition: all 0.3s linear;
 
             color: #eee;
@@ -774,9 +683,6 @@ footer {
 .teasers .teaser__description {
             background-color: #daeaf7;
             padding: 25px;
-
-            //border-top-right-radius: 20px;
-            //border-bottom-right-radius: 20px;
         }
 
 @media only screen and (max-width: 478px) {
@@ -785,10 +691,6 @@ footer {
                 padding: 15px
         }
     }
-
-.teasers .teaser__description h2 {
-                //color: ;
-            }
 
 .teasers .teaser__description p {
                 font-size: 17px;
@@ -1074,6 +976,8 @@ footer {
             color: #d0732f;
         }
 
+/* Hero używany na podstronach */
+
 .hero {
     display: grid;
 
@@ -1145,6 +1049,8 @@ footer {
         align-self: flex-end;
     }
 
+/* Pierwsza warstwa - obrazek */
+
 .hero__image {
         grid-column: 1/3;
         grid-row: 1/3;
@@ -1162,6 +1068,8 @@ footer {
 .hero__image--inne {
             background-image: url("../img/hero-inne.jpg");
         }
+
+/* Druga warstwa - przezroczysty gradient */
 
 .hero__image2 {
         grid-column: 1/3;

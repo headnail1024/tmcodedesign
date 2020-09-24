@@ -1,3 +1,4 @@
+/* Definicje przycisków */
 .btn {
     background-color: $baseComp;
     color: $textOnDark;
@@ -24,6 +25,7 @@
         @mixin addDeeperShadow;
     }
 
+    /* Duży pomarańczowy przycisk w herosie na stronie głównej */
     &--big {
         font-size: 16pt;
         @mixin addShadow;
@@ -35,6 +37,7 @@
         }
     }
 
+    /* Niebieskie przyciski */
     &--blue {
         background-color: $base;
     }

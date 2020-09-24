@@ -59,7 +59,7 @@ footer {
         }
 
         &__button {
-            background-color: $colorB;
+            background-color: $baseComp;
             border-radius: 3px;
             color: #fff;
             display: inline-block;

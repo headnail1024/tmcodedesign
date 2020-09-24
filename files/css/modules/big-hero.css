@@ -1,9 +1,11 @@
-$heroGradientStart: color($base a(0.3));
-$heroGradientEnd: color($baseMonoLight a(0.3));
+/* Wielki HERO na stronie głownej */
 
+/* Kolory gradientu nałożonego na grafikę w hero */
 $heroGradientStart: color($base a(0.35));
 $heroGradientEnd: color($baseComp a(0.35));
 
+/* Hero składa się z 3 nałożonych na siebie warstw - rozłożonych na gridzie
+   i sterowanych przez z-index */
 .big-hero {
     background-color: $baseMono;
 
@@ -15,8 +17,8 @@ $heroGradientEnd: color($baseComp a(0.35));
         grid-template-rows: 60px min-content;
     }
 
+    /* Pierwsza warstwa - obrazek */
     &__image {
-        /*boop*/
         background-image: url("../img/big-hero.jpg");
         grid-column: 1/7;
         grid-row: 1/5;
@@ -26,8 +28,8 @@ $heroGradientEnd: color($baseComp a(0.35));
         z-index: 1;
     }
 
+    /* Druga warstwa - gradient z przerzoczystością */
     &__image2 {
-        /*boop*/
         background-image: linear-gradient($heroGradientStart, $heroGradientEnd);
         grid-column: 1/7;
         grid-row: 1/5;
@@ -35,6 +37,7 @@ $heroGradientEnd: color($baseComp a(0.35));
         z-index: 2;
     }
 
+    /* Trzecia warstwa - treść */
     &__content {
         z-index: 3;
         align-self: center;
@@ -71,9 +74,6 @@ $heroGradientEnd: color($baseComp a(0.35));
             margin-bottom: 60px;
             font-family: "Lato", sans-serif;
             text-align: center;
-        }
-
-        a {
         }
     }
 }

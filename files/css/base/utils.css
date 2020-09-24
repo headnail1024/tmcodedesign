@@ -1,41 +1,7 @@
-@define-mixin atExtraSmall {
-    @media only screen and (max-width: 600px) {
-        /* Extra small devices (phones, 600px and down) */
-        @mixin-content;
-    }
-}
+/* Plik z klasami narzędziowymi i definicją mixinow i breakpointów */
 
-@define-mixin atSmall {
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
-        @mixin-content;
-    }
-}
-
-@define-mixin atMedium {
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        @mixin-content;
-    }
-}
-
-@define-mixin atLarge {
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
-        @mixin-content;
-    }
-}
-
-@define-mixin atExtraLarge {
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-        @mixin-content;
-    }
-}
-
-/* Breakpointy Desktop First */
-/* breakpointy takie same jak w webflow */
-
+/* Breakpointy Desktop First
+   takie same jak w webflow */
 @define-mixin atDFTablet {
     @media only screen and (max-width: 991px) {
         @mixin-content;
@@ -54,6 +20,7 @@
     }
 }
 
+/* Helper pokazujący w jakim breakpoincie aktualne jesteśmy */
 .bpinfo p {
     position: fixed;
     z-index: 10;
@@ -61,92 +28,32 @@
     bottom: 0px;
 
     &::after {
+        /* Desktop */
         content: "D";
         color: rgba(0, 0, 0, 0.38);
 
-        //background-color: black;
-
+        /* Tablet */
         @mixin atDFTablet {
             content: "T";
         }
-
+        /* Mobile - Landscape */
         @mixin atDFMobileLandscape {
             content: "ML";
         }
 
+        /* Mobile - Portrait */
         @mixin atDFMobilePortrait {
             content: "MP";
         }
     }
 }
 
-.auto-padded-box {
-    padding: 60px;
-    @mixin atDFTablet {
-        padding: 30px;
-    }
-
-    @mixin atDFMobileLandscape {
-        padding: 15px;
-    }
-
-    @mixin atDFMobilePortrait {
-        padding: 5px;
-    }
-}
-
-.higher-auto-padded-box {
-    padding: 120px 60px 120px 60px;
-    @mixin atDFTablet {
-        padding: 60px 30px 60px 30px;
-    }
-
-    @mixin atDFMobileLandscape {
-        padding: 30px 15px 30px 15px;
-    }
-
-    @mixin atDFMobilePortrait {
-        padding: 10px 5px 10px 5px;
-    }
-}
-
+/* Dodanie cienia */
 @define-mixin addShadow {
     box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.38);
 }
 
+/* Dodanie głębszego cienia */
 @define-mixin addDeeperShadow {
     box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.38);
 }
-
-/* Tester na breakpointy MF */
-/*
- .bpinfo2 p{
-   position: fixed;
-   z-index: 10;
-   &::after
-   {
-     content: "none";
-
-     @mixin atExtraSmall {
-       content: "XS";
-     }
-
-     @mixin atSmall {
-       content: "S";
-     }
-
-     @mixin atMedium {
-       content: "M";
-     }
-
-     @mixin atLarge {
-       content: "L";
-     }
-
-     @mixin atExtraLarge {
-       content: "XL";
-     }
-
-   }
- }
- */

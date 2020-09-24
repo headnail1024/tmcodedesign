@@ -1,28 +1,21 @@
-/*
-$colorA: #3B5DAD;
-$colorB: #FA9A87;
-$colorC: #6E98FA;
-$colorD: #BDFA55;
-$colorE: #87AD44;
-*/
+/* Definicja zmiennych i palety kolorów */
 
-$colorA: #3b81ad;
-$colorB: #f89a9a;
-$colorC: #6ec4fa;
-$colorD: #faf855;
-$colorE: #adac44;
-
+/* Kolor bazowy i jego odcienie (niebieski)*/
 $base: #2f8cd0;
-
 $baseMono: #58a3da;
 $baseMonoLight: #daeaf7;
 
+/* Kolor komplementarny i jego odcienie (pomarańczowy) */
 $baseComp: #d0732f;
 $baseCompLight: #e8cbb6;
 
+/* Kolor tekstu na jasnym tle */
 $textOnLight: #333;
+
+/* Kolor tekstu na ciemnym tle */
 $textOnDark: #eee;
 
+/* Tester kolorów palety - używany tylko w index-sandbox.htm */
 .tests {
     display: flex;
     margin: 20px;

@@ -1,3 +1,6 @@
+/* Bazowy plik css */
+
+/* Border box dla wszystkich elementów */
 * {
     box-sizing: border-box;
 }
@@ -6,22 +9,14 @@
     outline: none;
 }
 
-html {
-    //scroll-behavior: smooth;
-    //filter: invert() hue-rotate(180deg) blur(1px);
-}
-
 body {
     margin: 0px;
     padding: 0px;
-
     font-family: "Source Sans Pro", sans-serif;
-
     font-size: 1.4;
     color: $textOnLight;
     display: flex;
     flex-direction: column;
-    //min-height: 100vh;
 }
 
 h1,
@@ -33,12 +28,14 @@ h3 {
     padding: 0;
 }
 
+/* Reset list */
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+/* Reset linków */
 a {
     text-decoration: none;
     color: inherit;

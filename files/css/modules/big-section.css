@@ -119,6 +119,19 @@
     }
 }
 
+.bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.shadowed-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    @mixin addDeeperShadow;
+}
+
 .bg--resp {
     background-image: url("../img/resp.baseCompLight.svg");
 

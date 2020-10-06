@@ -57,3 +57,9 @@
 @define-mixin addDeeperShadow {
     box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.38);
 }
+
+.admin-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}

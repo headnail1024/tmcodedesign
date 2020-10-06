@@ -1,5 +1,7 @@
 <?php
 
+require get_theme_file_path('includes/bsection.php');
+
 function my_files()
 {
     wp_enqueue_script('tmcodedesign_script', get_theme_file_uri('/js/scripts-bundled.js'), NULL, '1.0', true);
@@ -15,6 +17,13 @@ add_action('wp_enqueue_scripts', 'my_files');
 function tmcodedesign_features()
 {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails', array('bsection'));
 }
 
 add_action('after_setup_theme', 'tmcodedesign_features');
+
+function load_custom_wp_admin_style()
+{
+    wp_enqueue_style('custom_wp_admin_css', get_theme_file_uri('/bundled/admin.css'));
+}
+add_action('admin_enqueue_scripts', 'load_custom_wp_admin_style');

@@ -49,6 +49,12 @@
 
 /* Dodanie głębszego cienia */
 
+.admin-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
 /* Definicja zmiennych i palety kolorów */
 
 /* Kolor bazowy i jego odcienie (niebieski)*/
@@ -1248,6 +1254,19 @@ footer {
 .big-section p .orange {
             color: #d0732f;
         }
+
+.bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.shadowed-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.38);
+}
 
 .bg--resp {
     background-image: url("../img/resp.baseCompLight.svg");

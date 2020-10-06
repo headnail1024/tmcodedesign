@@ -9,6 +9,12 @@
     </div>
 </section>
 
+
+<?
+    renderBSections($post->ID);
+?>
+
+<!--
 <div class="big-section big-section--whitebg">
     <div class="big-section__centered-container big-section__centered-container--reversed">
         <div class="big-section__imagebox bg--wizyt">
@@ -47,6 +53,7 @@
         </div>
     </div>
 </div>
+
 <div class="big-section big-section--whitebg">
     <div class="big-section__centered-container big-section__centered-container--reversed">
         <div class="big-section__imagebox bg--wp">
@@ -126,6 +133,8 @@
         </div>
     </div>
 </div>
+
+-->
 <? get_template_part('template-parts/contact-section'); ?>
 <?
 	get_footer();

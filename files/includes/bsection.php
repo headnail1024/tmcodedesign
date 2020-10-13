@@ -31,10 +31,6 @@ function renderBSections($page_id) {
 
 function renderBSection()
 {
-    echo "wololo";
-    echo get_field("image_in_circle");
-    echo get_the_post_thumbnail_url();
-
     if (get_field("background_color") == "white")
         $bgcolor_class = "big-section--whitebg";
     else
@@ -59,9 +55,7 @@ function renderBSection()
         </div>
         <div class="big-section__contentbox">
             <h1><? echo get_field("heading") ?></h1>
-            <p class="textbox__text">
             <? echo get_field("description") ?> 
-            </p>
         </div>
     </div>
 </div>

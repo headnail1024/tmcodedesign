@@ -1,4 +1,52 @@
 .admin-image {
     width: 100px;
     height: 100px;
+    border: 1px solid lightgray;
+}
+
+.admin-image-circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+
+.admin-bsection-style-white {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+
+.fa-arrows-v,
+.fa-arrows-h {
+    display: block;
+    margin: auto;
+}
+
+.admin-bsection-style-blue {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #daeaf7;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+
+.column-order_on_page {
+    width: 20%;
+}
+
+.column-orientation {
+    width: 10%;
+}
+
+.column-image {
+    width: 20%;
+}
+
+.column-description {
+    width: 40%;
 }

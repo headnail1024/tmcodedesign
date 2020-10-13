@@ -9,6 +9,11 @@
     </div>
 </section>
 
+<?
+    renderBSections($post->ID);
+?>
+
+<!--
 <div class="big-section big-section--whitebg">
     <div class="big-section__centered-container big-section__centered-container--reversed">
         <div class="big-section__imagebox bg--facjata">
@@ -68,7 +73,7 @@
             </p>
         </div>
     </div>
-</div>
+</div> -->
 
 <? get_template_part('template-parts/contact-section'); ?>
 <?

@@ -8,45 +8,55 @@
     <div class="big-hero__image2">
     </div>
     <div class="big-hero__content">
-        <h1>Strony internetowe dla Ciebie
-            <? the_field('big_hero_heading1') ?>
-        </h1>
-        <p>Stwórzmy wspólnie stronę dla twojego biznesu.</p>
-        <a class="btn btn--big" href="page-kontakt.htm">Porozmawiajmy</a>
+        <h1><?php echo get_field('big_hero')['title'] ?></h1>
+        <p><?php echo get_field('big_hero')['subtitle'] ?></p>
+        <a class="btn btn--big" href="page-kontakt.htm"><?php echo get_field('big_hero')['button_text'] ?></a>
     </div>
 </section>
 
 <section class="teasers-section">
     <div class="text-teaser">
-        <h2 class="text-teaser__heading-small">Z Moją Pomocą</h2>
-        <h1 class="text-teaser__heading-big">Stworzysz idealną stronę</h1>
-        <h1 class="text-teaser__heading-big">dla <strong>twojego</strong> biznesu.</h1>
+        <h2 class="text-teaser__heading-small"><?php echo get_field('short_services_info')['short_info_smaller_text'] ?></h2>
+        <h1 class="text-teaser__heading-big"><?php echo get_field('short_services_info')['short_info_bigger_text1'] ?>
+            <h1 class="text-teaser__heading-big"><?php echo get_field('short_services_info')['short_info_bigger_text2'] ?>
     </div>
 
     <div class="teasers">
-        <a href="page-strony.htm" class="teaser">
+        <a href="<?php echo get_field('short_services_info')['usluga_1']['link'] ?>" class="teaser">
             <div class="teaser__label">
-                <i class="fa fa-id-card-o fa-2x teaser__label__icon" aria-hidden="true"></i>
-                <h3 class="teaser__label__heading">Strony<br />WWW</h3>
+                <i class="fa <?php echo get_field('short_services_info')['usluga_1']['icon'] ?> fa-2x teaser__label__icon" aria-hidden="true"></i>
             </div>
             <div class="teaser__description">
-                <h2>Strony internetowe</h2>
-                <p>
-                    Strony wizytówki a także bardziej rozbudowane - zależnie od <strong>twoich</strong>
-                    potrzeb.
-                </p>
-                <p>
-                    Oparte o <strong>Wordpress</strong> - zbudowane z użyciem gotowego szablonu lub
-                    zaprojektowanego
-                    specjalnie dla Ciebie.
-                </p>
+                <h2><?php echo get_field('short_services_info')['usluga_1']['title'] ?></h2>
+                <?php echo get_field('short_services_info')['usluga_1']['description'] ?>
             </div>
         </a>
 
+        <a href="<?php echo get_field('short_services_info')['usluga_2']['link'] ?>" class="teaser">
+            <div class="teaser__label">
+                <i class="fa <?php echo get_field('short_services_info')['usluga_2']['icon'] ?> fa-2x teaser__label__icon" aria-hidden="true"></i>
+            </div>
+            <div class="teaser__description">
+                <h2><?php echo get_field('short_services_info')['usluga_2']['title'] ?></h2>
+                <?php echo get_field('short_services_info')['usluga_2']['description'] ?>
+            </div>
+        </a>
+
+        <a href="<?php echo get_field('short_services_info')['usluga_3']['link'] ?>" class="teaser">
+            <div class="teaser__label">
+                <i class="fa <?php echo get_field('short_services_info')['usluga_3']['icon'] ?> fa-2x teaser__label__icon" aria-hidden="true"></i>
+            </div>
+            <div class="teaser__description">
+                <h2><?php echo get_field('short_services_info')['usluga_3']['title'] ?></h2>
+                <?php echo get_field('short_services_info')['usluga_3']['description'] ?>
+            </div>
+        </a>
+
+
+        <!-- 
         <a href="page-sklepy.htm" class="teaser">
             <div class="teaser__label">
                 <i class="fa fa-shopping-basket fa-2x teaser__label__icon" aria-hidden="true"></i>
-                <h3 class="teaser__label__heading">Sklepy internetowe</h3>
             </div>
             <div class="teaser__description">
                 <h2>Sklepy internetowe</h2>
@@ -59,7 +69,6 @@
         <a href="page-inne.htm" class="teaser">
             <div class="teaser__label">
                 <i class="fa fa-cogs fa-2x teaser__label__icon" aria-hidden="true"></i>
-                <h3 class="teaser__label__heading">Inne usługi</h3>
             </div>
             <div class="teaser__description">
                 <h2>Inne usługi</h2>
@@ -70,29 +79,31 @@
                     Prace programistyczne niezwiązane ze stronami internetowymi.
                 </p>
             </div>
-        </a>
+        </a> -->
     </div>
 
 </section>
 
 <div class="programmer-teaser">
-    <h1 class="programmer-teaser__heading">Krótko o mnie:</h1>
+    <h1 class="programmer-teaser__heading"><?php echo get_field('about_me_section')['title'] ?></h1>
     <ul class="programmer-teaser__list">
         <li>
-            <img src="img/1.svg">
-            <p>Absolwent studiów <strong>informatycznych</strong>.</p>
+            <img src="<?php echo get_field('about_me_section')['cecha1']['image'] ?>">
+            <p><?php echo get_field('about_me_section')['cecha1']['text'] ?></p>
         </li>
         <li>
-            <img src="img/2.svg">
-            <p>Ponad <strong>10</strong> lat doświadczenia w zawodzie.</p>
+            <img src="<?php echo get_field('about_me_section')['cecha2']['image'] ?>">
+            <p><?php echo get_field('about_me_section')['cecha2']['text'] ?></p>
         </li>
-        <li><img src="img/3.svg">
-            <p><strong>Indywidualne</strong> podejście do klienta.
-            </p>
+        <li>
+            <img src="<?php echo get_field('about_me_section')['cecha3']['image'] ?>">
+            <p><?php echo get_field('about_me_section')['cecha3']['text'] ?></p>
         </li>
 
     </ul>
-    <a class="btn btn--blue" href="#">Dowiedz się wiecej</a>
+    <a class="btn btn--blue" href="<?php echo get_field('about_me_section')['button_link'] ?>">
+        <?php echo get_field('about_me_section')['button_text'] ?>
+    </a>
 </div>
 
 <? get_template_part('template-parts/contact-section'); ?>

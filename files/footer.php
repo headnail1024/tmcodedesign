@@ -1,3 +1,8 @@
+<?php
+/* Dane adresowe z footera są brane z sekcji kontaktowej ze strony głównej */
+$startPageId = get_option('page_on_front');
+?>
+
 <footer>
     <div class="footer-grid">
         <div class="footer-grid__item item-logo">
@@ -13,12 +18,54 @@
             <a class="footer-grid__item__link" href="/kontakt">Kontakt</a>
         </div>
 
+        <!-- 
+        <div class="contact-detail">
+            <p class="contact-detail-type">
+            <? echo get_field('contact_section', $startPageId)['contact_details1']['contact_detail_name'] ?>
+            </p>
+            <p>
+                <? echo get_field('contact_section', $startPageId)['contact_details1']['contact_detail_value'] ?>
+            </p>
+            <div class="buttons-container">
+                <a class="btn btn--blue" href="<? echo get_field('contact_section', $startPageId)['contact_details1']['link'] ?>">
+                    <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details1']['button_icon'] ?>" aria-hidden="true"></i>
+                    <? echo get_field('contact_section', $startPageId)['contact_details1']['button_text'] ?>
+                </a>
+            </div>
+        </div>
+        -->
+
+
         <div class="footer-grid__item item-address">
             <p>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                600100100</p>
-            <p><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                tomasz-michalski@tmcode.pl</p>
+                <a href="<? echo get_field('contact_section', $startPageId)['contact_details1']['link'] ?>">
+                    <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details1']['button_icon'] ?>" aria-hidden="true"></i>
+                    <? echo get_field('contact_section', $startPageId)['contact_details1']['contact_detail_value'] ?>
+                </a>
+            </p>
+
+            <p>
+                <a href="<? echo get_field('contact_section', $startPageId)['contact_details2']['link'] ?>">
+                    <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details2']['button_icon'] ?>" aria-hidden="true"></i>
+                    <? echo get_field('contact_section', $startPageId)['contact_details2']['contact_detail_value'] ?>
+                </a>
+            </p>
+
+            <p>
+                <a href="<? echo get_field('contact_section', $startPageId)['contact_details3']['link'] ?>">
+                    <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details3']['button_icon'] ?>" aria-hidden="true"></i>
+                    <? echo get_field('contact_section', $startPageId)['contact_details3']['contact_detail_value'] ?>
+                </a>
+            </p>
+
+            <p>
+                <a href="<? echo get_field('contact_section', $startPageId)['contact_details4']['link'] ?>">
+                    <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details4']['button_icon'] ?>" aria-hidden="true"></i>
+                    <? echo get_field('contact_section', $startPageId)['contact_details4']['contact_detail_value'] ?>
+                </a>
+            </p>
+
+
         </div>
 
     </div>

@@ -145,3 +145,17 @@ function cc_mime_types($mimes)
     $mimes['svg'] = 'image/svg+xml';
     return $mimes;
 }
+
+function tmcodedesign_add_admin_page()
+{
+    add_menu_page('TmCodeDesign Theme Options', 'TmCodeDesign', 'manage_options', 'tmcodedesign_options', 'thdesign_theme_create_page', 'dashicons-chart-pie', 120);
+}
+
+add_action('admin_menu', 'tmcodedesign_add_admin_page');
+
+function thdesign_theme_create_page()
+{
+?>
+    boo!
+<?
+}

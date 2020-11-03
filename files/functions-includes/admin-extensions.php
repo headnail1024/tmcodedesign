@@ -159,3 +159,23 @@ function thdesign_theme_create_page()
     boo!
 <?
 }
+
+
+add_action( 'admin_menu', 'tmcodedesign_add_metabox' );
+ 
+function tmcodedesign_add_metabox() {
+ 
+	add_meta_box(
+		'tmcodedesign_metabox', // metabox ID
+		'Podgląd big sections', // title
+		'tmcodedesign_metabox_callback', // callback function
+		'page', // post type or post types in array
+		'normal', // position (normal, side, advanced)
+		'core' // priority (default, low, high, core)
+	);
+ 
+}
+ 
+function tmcodedesign_metabox_callback( $post ) {
+    renderBSectionsAdmin($post->ID);
+}

@@ -16,7 +16,7 @@
         <div class="navigation__narrow_container">
 
             <div class="logo">
-                <a href="index.htm">
+                <a href="/">
                     <h3 aria-hidden="true">tm<strong>CODE</strong></h3>
                 </a>
             </div>

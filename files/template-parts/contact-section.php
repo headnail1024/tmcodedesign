@@ -16,6 +16,10 @@ $startPageId = get_option('page_on_front');
 </div>
 
 <div class="contact-section">
+
+    <?php echo do_shortcode('[formidable id=1]') ?>
+
+    <!-- 
     <form class="contact-form">
         <label for="contact-form-name">
             <? echo get_field('contact_section', $startPageId)['name_label'] ?>
@@ -36,6 +40,7 @@ $startPageId = get_option('page_on_front');
             <? echo get_field('contact_section', $startPageId)['send_message_button_text'] ?>
         </a>
     </form>
+    -->
 
     <div class="contact-info">
 

@@ -2,8 +2,10 @@
 .btn {
     background-color: $baseComp;
     color: $textOnDark;
-    font-family: "Lato", sans-serif;
+    //font-family: "Lato", sans-serif;
+    font-family: $buttonFont;
     font-size: 15px;
+    font-weight: bold;
 
     padding: 18px 32px 18px 32px;
     text-transform: uppercase;
@@ -30,6 +32,17 @@
         font-size: 16pt;
         @mixin addShadow;
 
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+            @mixin addDeeperShadow;
+        }
+    }
+
+    &--small {
+        @mixin addShadow;
+
+        padding: 9px 16px 9px 16px;
         &:hover,
         &:focus {
             transform: scale(1.05);

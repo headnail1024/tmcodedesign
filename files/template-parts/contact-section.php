@@ -52,7 +52,7 @@ $startPageId = get_option('page_on_front');
                 <? echo get_field('contact_section', $startPageId)['contact_details1']['contact_detail_value'] ?>
             </p>
             <div class="buttons-container">
-                <a class="btn btn--blue" href="<? echo get_field('contact_section', $startPageId)['contact_details1']['link'] ?>">
+                <a class="btn" href="<? echo get_field('contact_section', $startPageId)['contact_details1']['link'] ?>">
                     <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details1']['button_icon'] ?>" aria-hidden="true"></i>
                     <? echo get_field('contact_section', $startPageId)['contact_details1']['button_text'] ?>
                 </a>
@@ -67,7 +67,7 @@ $startPageId = get_option('page_on_front');
                 <? echo get_field('contact_section', $startPageId)['contact_details2']['contact_detail_value'] ?>
             </p>
             <div class="buttons-container">
-                <a class="btn btn--blue" href="<? echo get_field('contact_section', $startPageId)['contact_details2']['link'] ?>">
+                <a class="btn" href="<? echo get_field('contact_section', $startPageId)['contact_details2']['link'] ?>">
                     <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details2']['button_icon'] ?>" aria-hidden="true"></i>
                     <? echo get_field('contact_section', $startPageId)['contact_details2']['button_text'] ?>
                 </a>
@@ -82,7 +82,7 @@ $startPageId = get_option('page_on_front');
                 <? echo get_field('contact_section', $startPageId)['contact_details3']['contact_detail_value'] ?>
             </p>
             <div class="buttons-container">
-                <a class="btn btn--blue" href="<? echo get_field('contact_section', $startPageId)['contact_details3']['link'] ?>">
+                <a class="btn" href="<? echo get_field('contact_section', $startPageId)['contact_details3']['link'] ?>">
                     <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details3']['button_icon'] ?>" aria-hidden="true"></i>
                     <? echo get_field('contact_section', $startPageId)['contact_details3']['button_text'] ?>
                 </a>
@@ -97,7 +97,7 @@ $startPageId = get_option('page_on_front');
                 <? echo get_field('contact_section', $startPageId)['contact_details4']['contact_detail_value'] ?>
             </p>
             <div class="buttons-container">
-                <a class="btn btn--blue" href="<? echo get_field('contact_section', $startPageId)['contact_details4']['link'] ?>">
+                <a class="btn" href="<? echo get_field('contact_section', $startPageId)['contact_details4']['link'] ?>">
                     <i class="fa <? echo get_field('contact_section', $startPageId)['contact_details4']['button_icon'] ?>" aria-hidden="true"></i>
                     <? echo get_field('contact_section', $startPageId)['contact_details4']['button_text'] ?>
                 </a>

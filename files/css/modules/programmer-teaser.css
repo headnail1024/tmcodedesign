@@ -29,7 +29,8 @@
         font-size: 20px;
         text-transform: uppercase;
 
-        font-family: "Lato", sans-serif;
+        //font-family: "Lato", sans-serif;
+        font-family: $programmerTeasersFont;
 
         strong {
             color: $base;

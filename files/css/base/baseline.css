@@ -12,7 +12,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "Source Sans Pro", sans-serif;
+    //font-family: "Source Sans Pro", sans-serif;
+    font-family: $bodyFont;
     font-size: 1.4;
     color: $textOnLight;
     display: flex;
@@ -23,7 +24,8 @@ h1,
 h2,
 h3 {
     /* Czcionka nagłowków */
-    font-family: "Lato", sans-serif;
+    //font-family: "Lato", sans-serif;
+    font-family: $headingsFont;
     margin: 0;
     padding: 0;
 }

@@ -1,19 +1,37 @@
 /* Definicja zmiennych i palety kolorów */
 
 /* Kolor bazowy i jego odcienie (niebieski)*/
-$base: #2f8cd0;
-$baseMono: #58a3da;
-$baseMonoLight: #daeaf7;
+$base: #2f8cd0; /*205, 77, 82*/
+$baseMono: #58a3da; /*205, 60, 85*/
+$baseMonoLight: #daeaf7; /*207, 12, 97*/
 
 /* Kolor komplementarny i jego odcienie (pomarańczowy) */
-$baseComp: #d0732f;
-$baseCompLight: #e8cbb6;
+//$baseComp: #d0732f; /*25, 77, 82*/
+//$baseCompLight: #e8cbb6; /*25, 22, 91*/
+
+/* Kolor komplementarny i jego odcienie (pomarańczowy) */
+$baseComp: #d15b06;
+$baseCompLight: #e8cbb6; /*25, 22, 91*/
 
 /* Kolor tekstu na jasnym tle */
 $textOnLight: #333;
 
 /* Kolor tekstu na ciemnym tle */
 $textOnDark: #eee;
+
+$primaryFont: "Quicksand", sans-serif;
+$secondaryFont: "Quicksand", sans-serif;
+
+/* Użyte czcionki */
+$bodyFont: $primaryFont;
+$bigHeroFont: $primaryFont;
+$contactFormLabelsFont: $primaryFont;
+$navigationFont: $primaryFont;
+$teasersFont: $primaryFont;
+$headingsFont: $primaryFont;
+$programmerTeasersFont: $primaryFont;
+$contactInfoFont: $primaryFont;
+$buttonFont: $primaryFont;
 
 /* Tester kolorów palety - używany tylko w index-sandbox.htm */
 .tests {

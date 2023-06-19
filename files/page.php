@@ -1,7 +1,7 @@
 <?
-    get_header();
-    
-    $image = get_field('image');
+get_header();
+
+$image = get_field('image');
 ?>
 <section class="hero">
     <div class="hero__image hero__image--strony" style="background-image: url('<?php echo $image ?>')"></div>
@@ -12,10 +12,10 @@
 </section>
 
 <?
-    renderBSections($post->ID);
+renderBSections($post->ID);
 ?>
 
 <? get_template_part('template-parts/contact-section'); ?>
 <?
-	get_footer();
+get_footer();
 ?>
